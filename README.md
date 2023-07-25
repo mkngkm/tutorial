@@ -1,9 +1,9 @@
-### 2023	Spring	COSE361 ARTIFICIAL INTELLIGENCE(ENGLISH)
+# 2023	Spring	COSE361 ARTIFICIAL INTELLIGENCE(ENGLISH)
 
 ### From : UCB CS 188 | Spring 2020 https://inst.eecs.berkeley.edu/~cs188/sp20/project1/
 
 
-### Introduction
+## Introduction
 
 In this project, your Pacman agent will find paths through his maze world, both to reach a particular location and to collect food efficiently. You will build general search algorithms and apply them to Pacman scenarios.
 
@@ -16,7 +16,7 @@ The code for this project consists of several Python files, some of which you wi
 
 
 
-### Welcome to Pacman
+## Welcome to Pacman
 
 Pacman lives in a shiny blue world of twisting corridors and tasty round treats. Navigating this world efficiently will be Pacman’s first step in mastering his domain.
 
@@ -25,7 +25,7 @@ The simplest agent in searchAgents.py is called the GoWestAgent, which always go
 
 Note that pacman.py supports a number of options that can each be expressed in a long way (e.g., --layout) or a short way (e.g., -l). You can see the list of all options and their default values via:
 
-### Question 1 (3 points): Finding a Fixed Food Dot using Depth First Search
+## Question 1 (3 points): Finding a Fixed Food Dot using Depth First Search
 In searchAgents.py, you’ll find a fully implemented SearchAgent, which plans out a path through Pacman’s world and then executes that path step-by-step. The search algorithms for formulating a plan are not implemented – that’s your job.
 
 First, test that the SearchAgent is working correctly by running:
@@ -45,11 +45,11 @@ Hint: Each algorithm is very similar. Algorithms for DFS, BFS, UCS, and A* diffe
 Implement the depth-first search (DFS) algorithm in the depthFirstSearch function in search.py. To make your algorithm complete, write the graph search version of DFS, which avoids expanding any already visited states.
 
 
-### Question 2 (3 points): Breadth First Search
+## Question 2 (3 points): Breadth First Search
 Implement the breadth-first search (BFS) algorithm in the breadthFirstSearch function in search.py. Again, write a graph search algorithm that avoids expanding any already visited states. Test your code the same way you did for depth-first search.
 
 
-### Question 3 (3 points): Varying the Cost Function
+## Question 3 (3 points): Varying the Cost Function
 While BFS will find a fewest-actions path to the goal, we might want to find paths that are “best” in other senses. Consider mediumDottedMaze and mediumScaryMaze.
 
 By changing the cost function, we can encourage Pacman to find different paths. For example, we can charge more for dangerous steps in ghost-ridden areas or less for steps in food-rich areas, and a rational Pacman agent should adjust its behavior in response.
@@ -57,7 +57,7 @@ By changing the cost function, we can encourage Pacman to find different paths. 
 Implement the uniform-cost graph search algorithm in the uniformCostSearch function in search.py. We encourage you to look through util.py for some data structures that may be useful in your implementation. You should now observe successful behavior in all three of the following layouts, where the agents below are all UCS agents that differ only in the cost function they use (the agents and cost functions are written for you):
 
 
-### Question 4 (3 points): A* search
+## Question 4 (3 points): A* search
 Implement A* graph search in the empty function aStarSearch in search.py. A* takes a heuristic function as an argument. Heuristics take two arguments: a state in the search problem (the main argument), and the problem itself (for reference information). The nullHeuristic heuristic function in search.py is a trivial example.
 
 You can test your A* implementation on the original problem of finding a path through a maze to a fixed position using the Manhattan distance heuristic (implemented already as manhattanHeuristic in searchAgents.py).
